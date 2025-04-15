@@ -1,6 +1,7 @@
 import torch
 import torch.nn as nn
 
+# H, W 处理为1
 class ChannelAttention(nn.Module):
     def __init__(self, in_planes, ratio=16):
         super(ChannelAttention, self).__init__()
