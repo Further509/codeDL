@@ -8,3 +8,5 @@
 - MultiHeadSelfAttention
 - Embedding
 - Lora
+- KL
+- BCELoss / CELoss
