@@ -4,6 +4,7 @@
 - Conv2d
 - Pool
 - Linear
+- Dropout
 ##  基础架构(层/块)
 - FCN
 - ChannelAttention
