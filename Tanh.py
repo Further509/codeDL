@@ -1,6 +1,6 @@
 import numpy as np
 
-class ReLu(object):
+class Tanh():
     def __init__(self):
         self.X = None
 
@@ -9,17 +9,14 @@ class ReLu(object):
         return self.forward(self.X)
     
     def forward(self, X):
-        return np.maximum(0, X)
+        return np.tanh(X)
     
     def backward(self, grad_output):
-        '''
-        grad_output: loss对relu激活输出的梯度
-        '''
-        grad_relu = self.X > 0
-        return grad_relu * grad_output
+        grad_tanh = 1 - (np.tanh(self.X)) ** 2
+        return grad_output * grad_tanh
     
 if __name__ == "__main__":
-    relu = ReLu()
+    relu = Tanh()
     x = np.random.randn(2, 10)
     print("x: ", x)
     out = relu(x)
