@@ -25,7 +25,6 @@ class PositionEmbedding(nn.Module):
         return self.encoding[:seq_len, :].unsqueeze(0).repeat(x.shape[0], 1, 1)
 
 if __name__ == "__main__":
-    # 示例调用
     batch = 2
     seq_len = 10
     d_model = 16
