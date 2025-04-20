@@ -7,6 +7,8 @@
 - Dropout
 ## 激活函数
 - ReLu
+- Tanh
+- Sigmoid
 ##  基础架构(层/块)
 - FCN
 - ChannelAttention
