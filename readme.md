@@ -15,5 +15,6 @@
 - Lora
 ## Loss 
 - KL
+- MSELoss
 - BCELoss / CELoss
 ## 模型
