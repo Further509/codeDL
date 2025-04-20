@@ -1,6 +1,7 @@
 # 手撕深度学习代码
 
 - Conv2d
+- Pool
 - ChannelAttention
 - SelfAttention
 - BatchNorm
