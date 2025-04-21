@@ -19,11 +19,11 @@ class Sigmoid():
         return 1.0 / (1 + np.exp(-X))
     
 if __name__ == "__main__":
-    relu = Sigmoid()
+    sig = Sigmoid()
     x = np.random.randn(2, 10)
     print("x: ", x)
-    out = relu(x)
+    out = sig(x)
     print("out: ", out)
     d_out = np.random.randn(2, 10)
-    grads = relu.backward(d_out)
+    grads = sig.backward(d_out)
     print("grad: ", grads)

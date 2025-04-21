@@ -16,11 +16,11 @@ class Tanh():
         return grad_output * grad_tanh
     
 if __name__ == "__main__":
-    relu = Tanh()
+    tanh = Tanh()
     x = np.random.randn(2, 10)
     print("x: ", x)
-    out = relu(x)
+    out = tanh(x)
     print("out: ", out)
     d_out = np.random.randn(2, 10)
-    grads = relu.backward(d_out)
+    grads = tanh.backward(d_out)
     print("grad: ", grads)
