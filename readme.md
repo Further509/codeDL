@@ -3,6 +3,7 @@
 ## 基础 `numpy` 实现
 - Conv2d
 - Pool
+- Flatten
 - Linear
 - Dropout
 ## 激活函数
@@ -22,4 +23,6 @@
 - KL
 - MSELoss
 - BCELoss / CELoss
+## 优化器
+- SGD
 ## 模型
